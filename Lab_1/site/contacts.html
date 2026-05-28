@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Зоологічний довідник «Світ Тварин»</h1>
+        <p>Сторінка контактів</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a> | 
+        <a href="birds.html">Клас Птахи</a> | 
+        <a href="contacts.html">Зворотній зв'язок</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Форма для зв'язку</h2>
+            <form action="contacts.html" method="post">
+                <p>Ім'я:<br>
+                <input type="text" name="username" required></p>
+                
+                <p>Email (обов'язково):<br>
+                <input type="email" name="useremail" required></p>
+                
+                <p>Телефон (+380XXXXXXXXX):<br>
+                <input type="tel" name="usertel" required pattern="^\+380\d{9}$"></p>
+                
+                <p>Сайт (URL):<br>
+                <input type="url" name="userurl"></p>
+                
+                <p>Дата заповнення:<br>
+                <input type="datetime-local" name="userdate" required></p>
+                
+                <p><input type="submit" value="Надіслати"></p>
+            </form>
+        </article>
+
+        <aside>
+            <h3>Контакти</h3>
+            <p>Кафедра ПІ, ХНУРЕ</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Зоологічний довідник.</p>
+    </footer>
+
+</body>
+</html>
